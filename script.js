@@ -114,15 +114,12 @@ function revealSurroundingBlankTiles(tile) {
 
   surroundingTiles.forEach((eachTile) => {
     if (eachTile.numSurroundingMines === 0) {
-      const bombCounter = checkTile(eachTile, board);
-      if (bombCounter === 0) {
-        board[eachTile.x][eachTile.y].tileElement.dataset.status = "";
+      board[eachTile.x][eachTile.y].tileElement.dataset.status = "";
 
-        if (alreadyChecked.has(eachTile.x.toString() + eachTile.y.toString()))
-          return;
+      if (alreadyChecked.has(eachTile.x.toString() + eachTile.y.toString()))
+        return;
 
-        queue.push(eachTile);
-      }
+      queue.push(eachTile);
 
       // While there are things to check in the queue, run this again
       while (queue.length > 0) {
