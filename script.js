@@ -10,7 +10,7 @@ const boardElement = document.querySelector(".board");
 const minesLeftElement = document.querySelector(".subtext");
 
 const BOARD_SIZE = 10;
-const NUM_BOMBS = 3;
+const NUM_BOMBS = 10;
 
 let minesLeft = NUM_BOMBS;
 let queue = [];
