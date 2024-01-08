@@ -1,20 +1,3 @@
-// Meant for Creating all the helper functions
-// Functions required:
-
-// 1. Create Board
-// a. Left Click on tiles
-// a1. If bomb, end game
-// a2. If number, reveal number
-// a3. If empty square, reveal all adjacent empty squares (recursive?)
-// b. Right click on tiles
-// b1. Mark on tile
-
-// 2. Populate Mines randomly (DONE)
-
-// 3. Reset board when refreshed (DONE)
-
-// 4. When all tiles are opened, Win game (Check if all tiles don't have hidden status)
-
 export const data_status = {
   HIDDEN: "hidden",
   MINE: "mine",
